@@ -1,0 +1,184 @@
+
+@import 'bootstrap/bootstrap';
+@import 'variables';
+@import 'mixins';
+// @import 'slider';
+// @import 'animate';
+html {
+    font-size: 14px;
+}
+
+section {
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    text-align: center;
+    &{
+        font-size: 1.5rem;
+    }
+    
+    &--hero{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        min-height: 100vh;
+        background-image: linear-gradient($light-purple, $light-purple), url(../img/header.png);
+    }
+    
+    &--about{
+        background-color: $purple;
+        background-image: linear-gradient($purple, $purple), url(../img/about.png);
+        height: 560px;
+    }
+
+    &--services{
+        background-color: $purple;
+        background-image: linear-gradient($purple, $purple), url(../img/services.png);
+        min-height: 800px;
+    }
+
+    &--work{
+        background-color: $indigo;
+        background-image: linear-gradient($indigo, $indigo), url(../img/works.png);
+        min-height: 1000px;
+    }
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+
+    &--pinned {
+        transform: translateY(0%);
+        background-color: rgba($color: ($light-purple), $alpha: .95);
+    }
+
+    &--unpinned {
+        transform: translateY(-100%);
+    }
+
+    &--top {
+        background-color: transparent;
+    }
+}
+
+h1{
+    color: $gray-100;
+    margin: 100px auto;
+}
+
+.h2-about{
+    color: $gray-50;
+}
+
+.subtitle{
+    color: $gray-200;
+    font-style: italic;
+    font-family: $font-family-base;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    @include hover{
+        color: $secondary;
+    }
+}
+
+.large-py{
+    padding: 100px 0 120px;
+}
+
+a {
+    text-decoration: none;
+    @include hover {
+        .h2-about{
+            color: $secondary;
+            
+        }
+       
+    }
+}
+
+.services{
+    height: 400px;
+    font-family: $font-family-base;
+    
+    & a{
+        color: $secondary;
+        @include hover{
+            color: $purple;
+        }
+    }
+    
+    
+    &__name{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        font-size: 1.7rem;
+    }
+    &__subtitle{
+        font-size: 1.2rem;
+    }
+}
+
+
+.blockquote{
+    &__author::before,
+    &__author::after{
+            content: '-';
+            color:$secondary;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.copyright{
+    font-size: 18px;
+    color: $primary;
+}
+
+.social{
+    display: inline-block;
+    list-style: none;
+     
+
+    &__link {
+    width: 30px;
+    height: 30px; 
+    background-color: $primary; 
+    color: $purple;
+    display: inline-block; 
+    text-align: center;
+    vertical-align: baseline;
+    
+    border-radius: 50%;
+   
+        
+    }
+
+    &__icon {
+        color: $purple;
+        background-color: $primary; 
+        height: 100%;
+        vertical-align: sub;
+        @include hover {
+            color: $secondary;
+            
+        }
+    }
+}
