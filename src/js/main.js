@@ -20,4 +20,5 @@
 ///= bootstrap/toast.js
 ///= bootstrap/tooltip.js
 //= lib/lazysizes.min.js
+//= scripts-map.js
 //= scripts.js

@@ -1771,7 +1771,7 @@ pre {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: rgba(216, 214, 224, 0.226);
+  background-color: rgba(241, 241, 243, 0.4);
   border: solid transparent;
   border-width: 1px 0;
   border-radius: 10px;
@@ -7333,8 +7333,22 @@ a {
 
 #map {
   min-height: 900px;
-  background-color: #aea9c5;
-  position: relative; }
+  z-index: -1;
+  opacity: .2; }
+
+.map-contacts {
+  position: relative;
+  z-index: 4;
+  background-color: rgba(159, 154, 207, 0.8); }
+
+.contacts {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .form {
   margin-top: 270px; }
@@ -7430,7 +7444,15 @@ a {
   align-items: center;
   position: absolute;
   top: 50%;
-  z-index: 10; }
+  z-index: 10;
+  -webkit-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  transition: all .4s ease-in; }
+  .arrow:hover, .arrow:focus, .arrow:active {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
   .arrow--left {
     left: -5%; }
   .arrow--right {

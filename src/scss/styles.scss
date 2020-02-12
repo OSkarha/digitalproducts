@@ -179,12 +179,27 @@ a {
 
 #map{
     min-height: 900px;
-    background-color: $light-purple;
+    z-index: -1;
+    opacity: .2;
+}
+
+.map-contacts{
     position: relative;
+    z-index: 4;
+    background-color: rgba($color: ($purple), $alpha: .8);
+}
+
+.contacts{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    
 }
 
 .form{
     margin-top: 270px;
+    
     &__btn{
         background-color: $purple;
         border: none;
@@ -272,6 +287,9 @@ a {
     position: absolute;
     top: 50%;
     z-index: 10;
+    @include hover{
+        transform: scale(1.2);
+    }
     
     &--left {
         left: -5%;
@@ -281,3 +299,4 @@ a {
     }
 
 }
+
