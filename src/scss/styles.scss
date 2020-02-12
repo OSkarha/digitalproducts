@@ -33,24 +33,24 @@ img {
         
         justify-content: center;
         min-height: 100vh;
-        background-image: linear-gradient($light-purple, $light-purple), url(../img/header.png);
+        background-image: linear-gradient($light-purple, $light-purple), url(../img/header.webp);
     }
     
     &--about{
         background-color: $purple;
-        background-image: linear-gradient($purple, $purple), url(../img/about.png);
+        background-image: linear-gradient($purple, $purple), url(../img/about.webp);
         min-height: 560px;
     }
 
     &--services{
         background-color: $purple;
-        background-image: linear-gradient($purple, $purple), url(../img/services.png);
+        background-image: linear-gradient($purple, $purple), url(../img/services.webp);
         min-height: 800px;
     }
 
     &--work{
         background-color: $indigo;
-        background-image: linear-gradient($indigo, $indigo), url(../img/works.png);
+        background-image: linear-gradient($indigo, $indigo), url(../img/works.webp);
         min-height: 1000px;
     }
 }

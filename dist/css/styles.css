@@ -7194,26 +7194,26 @@ img {
     -ms-flex-pack: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#aea9c5), to(#aea9c5)), url(../img/header.png);
-    background-image: -o-linear-gradient(#aea9c5, #aea9c5), url(../img/header.png);
-    background-image: linear-gradient(#aea9c5, #aea9c5), url(../img/header.png); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#aea9c5), to(#aea9c5)), url(../img/header.webp);
+    background-image: -o-linear-gradient(#aea9c5, #aea9c5), url(../img/header.webp);
+    background-image: linear-gradient(#aea9c5, #aea9c5), url(../img/header.webp); }
   .cover--about {
     background-color: #9f9acf;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9f9acf), to(#9f9acf)), url(../img/about.png);
-    background-image: -o-linear-gradient(#9f9acf, #9f9acf), url(../img/about.png);
-    background-image: linear-gradient(#9f9acf, #9f9acf), url(../img/about.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9f9acf), to(#9f9acf)), url(../img/about.webp);
+    background-image: -o-linear-gradient(#9f9acf, #9f9acf), url(../img/about.webp);
+    background-image: linear-gradient(#9f9acf, #9f9acf), url(../img/about.webp);
     min-height: 560px; }
   .cover--services {
     background-color: #9f9acf;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9f9acf), to(#9f9acf)), url(../img/services.png);
-    background-image: -o-linear-gradient(#9f9acf, #9f9acf), url(../img/services.png);
-    background-image: linear-gradient(#9f9acf, #9f9acf), url(../img/services.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9f9acf), to(#9f9acf)), url(../img/services.webp);
+    background-image: -o-linear-gradient(#9f9acf, #9f9acf), url(../img/services.webp);
+    background-image: linear-gradient(#9f9acf, #9f9acf), url(../img/services.webp);
     min-height: 800px; }
   .cover--work {
     background-color: #b6b2d7;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#b6b2d7), to(#b6b2d7)), url(../img/works.png);
-    background-image: -o-linear-gradient(#b6b2d7, #b6b2d7), url(../img/works.png);
-    background-image: linear-gradient(#b6b2d7, #b6b2d7), url(../img/works.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#b6b2d7), to(#b6b2d7)), url(../img/works.webp);
+    background-image: -o-linear-gradient(#b6b2d7, #b6b2d7), url(../img/works.webp);
+    background-image: linear-gradient(#b6b2d7, #b6b2d7), url(../img/works.webp);
     min-height: 1000px; }
 
 .headroom {
