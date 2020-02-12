@@ -1097,8 +1097,8 @@ $carousel-caption-color:             $white !default;
 
 $carousel-control-icon-width:        20px !default;
 
-$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' width='8' height='8' viewBox='0 0 8 8'><path d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/></svg>") !default;
-$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' width='8' height='8' viewBox='0 0 8 8'><path d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/></svg>") !default;
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22px' height='38px'><path fill='#{$carousel-control-color}' d='M21.518,1.990 L2.423,18.999 L21.518,36.009 C21.987,36.303 22.147,36.956 21.877,37.465 C21.606,37.976 21.007,38.151 20.539,37.856 L0.482,19.989 C0.177,19.798 0.020,19.454 0.009,19.098 C0.005,19.064 0.005,19.033 0.003,18.999 C0.005,18.965 0.005,18.933 0.010,18.900 C0.020,18.544 0.177,18.200 0.482,18.008 L20.539,0.142 C21.007,-0.153 21.606,0.022 21.877,0.533 C22.147,1.042 21.987,1.695 21.518,1.990 Z'/></svg>") !default;
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22px' height='38px'> <path fill='#{$carousel-control-color}' d='M21.997,18.999 C21.995,19.033 21.995,19.064 21.990,19.098 C21.979,19.454 21.822,19.798 21.518,19.989 L1.461,37.856 C0.993,38.151 0.394,37.976 0.123,37.465 C-0.148,36.956 0.013,36.303 0.481,36.009 L19.576,18.999 L0.481,1.990 C0.013,1.695 -0.148,1.042 0.123,0.533 C0.394,0.022 0.993,-0.153 1.461,0.142 L21.518,18.008 C21.822,18.200 21.979,18.544 21.990,18.900 C21.995,18.933 21.995,18.965 21.997,18.999 Z'/></svg>") !default;
 
 $carousel-transition-duration:       .6s !default;
 $carousel-transition:                transform $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)

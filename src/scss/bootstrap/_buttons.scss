@@ -15,12 +15,12 @@
   cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
   user-select: none;
   background-color: transparent;
-  border: $btn-border-width solid $secondary;
+  border: $btn-border-width solid inherit;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
   @include hover() {
-    color: $body-color;
+    color: $purple !important;
     text-decoration: none;
     background-color: $primary;
   }

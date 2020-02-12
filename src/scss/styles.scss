@@ -6,6 +6,7 @@
 // @import 'animate';
 html {
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -38,7 +39,7 @@ img {
     &--about{
         background-color: $purple;
         background-image: linear-gradient($purple, $purple), url(../img/about.png);
-        height: 560px;
+        min-height: 560px;
     }
 
     &--services{
@@ -155,7 +156,6 @@ a {
 .social{
     display: inline-block;
     list-style: none;
-     
 
     &__link {
     width: 30px;
@@ -165,20 +165,57 @@ a {
     display: inline-block; 
     text-align: center;
     vertical-align: baseline;
-    
-    border-radius: 50%;
-   
-        
+    border-radius: 50%;  
     }
 
     &__icon {
         color: $purple;
         background-color: $primary; 
-        height: 100%;
         vertical-align: sub;
         @include hover {
             color: $secondary;
-            
         }
+    }
+}
+
+
+#map{
+    min-height: 900px;
+    background-color: $light-purple;
+    position: relative;
+}
+
+.form{
+    margin-top: 270px;
+    &__btn{
+        background-color: $purple;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        font-family: $font-family-heading;
+    }
+}
+
+.svg-up{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  @include hover {
+    transform: translate(-50%,-90%);
+}
+}
+
+.footer__up{
+    width: 88px;
+    height: 88px;
+    background-color: fade-out($purple, .5);
+    position: absolute;
+    bottom: 14%;
+    right: 5%;
+    text-align: center;
+    @include hover {
+        background-color: fade-out($purple, 0);
     }
 }

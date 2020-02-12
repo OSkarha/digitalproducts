@@ -3077,6 +3077,7 @@ return Popper;
 
 }(window.Zepto || window.jQuery));
 
+
 /*!
   * Bootstrap util.js v4.4.1 (https://getbootstrap.com/)
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -5027,14 +5028,27 @@ return Popper;
         let top = $(el).offset().top + 100;
         return top < ($(window).scrollTop() + $(window).height());
     }
-    $(function () {
-        $('#carousel').carousel({
-          interval: 10000,
-          keyboard: false,
-          pause: 'hover',
-          ride: 'carousel',
-          wrap: false
-        });
-      });
+
+    $("myCarousel").carousel();
+
+    let myMap = null,
+    
+    center = {lat: 40.6393614, lng: -73.8660352},
+    
+    function initMap() {
+        
+        
+        myMap = new google.maps.Map(document.getElementById('map'), {
+            center: center,
+            zoom: 10,
+            disableDefaultUI: true
+          })
+
+
+         
+
+        myMap.setOptions({styles: style});
+    }
+
 
 })(jQuery);

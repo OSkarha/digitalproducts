@@ -34,6 +34,11 @@
   margin-right: -100%;
   backface-visibility: hidden;
   @include transition($carousel-transition);
+  height: 550px;
+
+  & img{
+    height: 100%;
+  }
 }
 
 .carousel-item.active,
@@ -145,7 +150,7 @@
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -70px;
   left: 0;
   z-index: 15;
   display: flex;
@@ -159,23 +164,25 @@
   li {
     box-sizing: content-box;
     flex: 0 1 auto;
-    width: $carousel-indicator-width;
-    height: $carousel-indicator-height;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid $primary;
     margin-right: $carousel-indicator-spacer;
     margin-left: $carousel-indicator-spacer;
     text-indent: -999px;
     cursor: pointer;
-    background-color: $carousel-indicator-active-bg;
+    background-color: transparent;
     background-clip: padding-box;
     // Use transparent borders to increase the hit area by 10px on top and bottom.
-    border-top: $carousel-indicator-hit-area-height solid transparent;
-    border-bottom: $carousel-indicator-hit-area-height solid transparent;
-    opacity: .5;
+    // border-top: $carousel-indicator-hit-area-height solid transparent;
+    // border-bottom: $carousel-indicator-hit-area-height solid transparent;
+    // opacity: .5;
     @include transition($carousel-indicator-transition);
   }
 
   .active {
-    opacity: 1;
+    background-color: $primary;
   }
 }
 

@@ -5,6 +5,7 @@
 //= lib/headroom.js
 //= lib/jQuery.headroom.js
 
+
 //= bootstrap/util.js
 //= bootstrap/collapse.js
 //= bootstrap/dropdown.js
