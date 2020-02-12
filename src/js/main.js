@@ -1,14 +1,14 @@
 //= lib/jquery.js
 //= lib/slick.js
-//= lib/popper.js
+///= lib/popper.js
 /// = lib/isotope.js
 //= lib/headroom.js
 //= lib/jQuery.headroom.js
 
 
 //= bootstrap/util.js
-//= bootstrap/collapse.js
-//= bootstrap/dropdown.js
+///= bootstrap/collapse.js
+///= bootstrap/dropdown.js
 
 ///= bootstrap/alert.js
 ///= bootstrap/button.js
@@ -19,5 +19,5 @@
 ///= bootstrap/tab.js
 ///= bootstrap/toast.js
 ///= bootstrap/tooltip.js
-
+//= lib/lazysizes.min.js
 //= scripts.js
