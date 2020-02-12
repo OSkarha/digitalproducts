@@ -69,27 +69,27 @@ gulp.task('img', gulp.series('clean-img', function() {
             .pipe(gulp.dest('dist')) &&
         gulp.src('src/img/**/*.*')
         .pipe(imagemin([
-            // pngquant({
-            //     speed: 1,
-            //     quality: [0.95, 1]
-            // }),
-            // zopfli({more: true}),
-            // giflossy({
-            //     optimizationLevel: 3,
-            //     optimize: 3,
-            //     lossy: 2
-            // }),
-            // imagemin.svgo({
-            //     plugins: [{
-            //         removeViewBox: false
-            //     }]
-            // }),
-            // jpegtran({
-            //     progressive: true
-            // }),
-            // mozjpeg({
-            //     quality: 90
-            // })
+            pngquant({
+                speed: 1,
+                quality: [0.95, 1]
+            }),
+            zopfli({more: true}),
+            giflossy({
+                optimizationLevel: 3,
+                optimize: 3,
+                lossy: 2
+            }),
+            imagemin.svgo({
+                plugins: [{
+                    removeViewBox: false
+                }]
+            }),
+            jpegtran({
+                progressive: true
+            }),
+            mozjpeg({
+                quality: 90
+            })
         ]))
         .pipe(gulp.dest('dist/img'))
         .pipe(browserSync.stream());

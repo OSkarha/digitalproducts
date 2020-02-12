@@ -1,5 +1,5 @@
 //= lib/jquery.js
-///= lib/slick.js
+//= lib/slick.js
 //= lib/popper.js
 /// = lib/isotope.js
 //= lib/headroom.js
